@@ -1,7 +1,13 @@
+import { useState } from "react";
+import { FaLock } from "react-icons/fa";
+import { IoEye, IoEyeOff } from "react-icons/io5";
+
 export default function App() {
+  const [showPassword, setShowPassword] = useState(false)
+
   return (
-      <div className="bg-white text-black h-screen flex items-center justify-center">
-      <div className="text-4xl bg-amber-300 w-4xl min-h-96 font-bold overflow-hidden flex">
+      <div className="bg-gray-100 text-black h-screen flex items-center justify-center">
+      <div className="bg-white w-4xl min-h-96 font-bold overflow-hidden flex">
         {/* Imagem da Esquerda do Layout */}
         <div className="w-1/2">
           <img
@@ -12,10 +18,9 @@ export default function App() {
         </div>
 
         {/* Fomrulario de Login do usuario  */}
-        <div className="w-1/2 bg-red-800 flex items-center justify-center p-10">
-  
-          <div className="w-full max-w-sm flex flex-col items-center gap-6">
-            
+        <div className="w-1/2 flex items-center justify-center p-10">
+
+          <div className="w-full max-w-sm flex flex-col items-center gap-6">            
             {/* Logo */}
             <img
               src="https://i.pinimg.com/1200x/79/a4/a6/79a4a63184f7efbc6c148ad552e60a75.jpg"
@@ -24,21 +29,66 @@ export default function App() {
             />
 
             {/* Texto */}
-            <h1 className="text-white font-bold">
+            <h1 className="text-gray-900 font-bold">
               <span className="text-lg">
                 Seja Bem-Vindo!
               </span>
 
-              <span className="text-base text-gray-100 ml-2 font-bold">
+              <span className="text-base text-gray-800 ml-2 font-bold">
                 Entre na sua conta.
               </span>
             </h1>
 
             {/* Formulário */}
-            <form className="w-full flex flex-col gap-4">
-              
-            
-            </form>
+            <form className="w-full flex flex-col gap-1">
+
+              <div className="flex flex-col gap-2">
+                <label className="text-sm text-gray-800">
+                  Email
+                </label>
+                <div className="relative">
+                  <img
+                    src="https://i.pinimg.com/1200x/6a/b2/87/6ab287f4d66184c47016de318390d9ec.jpg"
+                    alt=""
+                    className="w-8 h-8 object-cover absolute left-1 top-1/2 -translate-y-1/2 rounded-full"
+                  />
+
+                  <input
+                    type="email"
+                    placeholder="Digite seu email"
+                    className=" w-full h-12 rounded-lg pl-10 outline-none text-black placeholder:text-base border-2 border-gray-400/40 focus:border-blue-900/50 transition"
+                  />
+                </div>
+
+                <div className="relative">
+                  <label className="text-sm text-gray-800">
+                  Senha
+                </label>
+                  <FaLock className="absolute left-3 top-12 -translate-y-1/2 text-blue-700 text-lg" />
+
+                  <input
+                    type={showPassword ? "text" : "password"}
+                    placeholder="*********"
+                    className=" w-full h-12 rounded-lg pl-10 outline-none text-black placeholder:text-base border-2 border-gray-400/40 focus:border-blue-900/50 transition"
+                  />
+
+                    <button
+                      type="button"
+                      onClick={() => setShowPassword(!showPassword)}
+                      className="
+                        absolute
+                        right-3
+                        top-12
+                        -translate-y-1/2
+                        text-gray-600
+                      "
+                    >
+                      {showPassword ? <IoEyeOff /> : <IoEye />}
+                    </button>
+                </div>
+              </div>
+                          
+            </form> 
 
           </div>
 
