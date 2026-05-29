@@ -7,11 +7,11 @@ export default function App() {
 
   return (
       <div className="bg-gray-100 text-black h-screen flex items-center justify-center">
-      <div className="bg-white w-4xl font-bold overflow-hidden flex">
+      <div className="bg-white w-4xl h-137.5 font-bold overflow-hidden flex">
         {/* Imagem da Esquerda do Layout */}
         <div className="w-1/2">
           <img
-            src="https://i.pinimg.com/736x/6c/65/d0/6c65d089cb8f789ea8690812ee2484db.jpg"
+            src="public/page-login.png"
             alt=""
             className="w-full h-full object-cover"
           />
@@ -19,8 +19,7 @@ export default function App() {
 
         {/* Fomrulario de Login do usuario  */}
         <div className="w-1/2 flex items-center justify-center p-10">
-
-          <div className="w-full max-w-sm flex flex-col items-center gap-6">            
+          <div className="w-full max-w-sm flex flex-col items-center">            
             {/* Logo */}
             <img
               src="https://i.pinimg.com/1200x/79/a4/a6/79a4a63184f7efbc6c148ad552e60a75.jpg"
@@ -29,7 +28,7 @@ export default function App() {
             />
 
             {/* Texto */}
-            <h1 className="text-gray-900 font-bold">
+            <h1 className="text-gray-900 font-bold m-6">
               <span className="text-lg">
                 Seja Bem-Vindo!
               </span>
@@ -46,7 +45,7 @@ export default function App() {
                 <label className="text-sm text-gray-800">
                   Email
                 </label>
-                <div className="relative">
+                <div className="relative text-gray-800">
                   <img
                     src="https://i.pinimg.com/1200x/6a/b2/87/6ab287f4d66184c47016de318390d9ec.jpg"
                     alt=""
@@ -60,16 +59,16 @@ export default function App() {
                   />
                 </div>
 
-                <div className="relative">
+                <div className="relative text-gray-800">
                   <label className="text-sm text-gray-800">
                   Senha
                 </label>
-                  <FaLock className="absolute left-3 top-12 -translate-y-1/2 text-blue-700 text-lg" />
+                  <FaLock className="absolute left-3 top-14 -translate-y-1/2 text-blue-700 text-lg" />
 
                   <input
                     type={showPassword ? "text" : "password"}
                     placeholder="*********"
-                    className=" w-full h-12 rounded-lg pl-10 outline-none text-black placeholder:text-sm border-2 border-gray-400/40 focus:border-blue-900/50 transition"
+                    className=" w-full h-12 rounded-lg mt-2 pl-10 outline-none text-gray-800 placeholder:text-sm border-2 border-gray-400/40 focus:border-blue-900/50 transition"
                   />
 
                     <button
@@ -78,7 +77,7 @@ export default function App() {
                       className="
                         absolute
                         right-3
-                        top-12
+                        top-14
                         -translate-y-1/2
                         text-gray-600
                       "
@@ -90,26 +89,34 @@ export default function App() {
                           
             </form> 
              
-            <div className="flex items-center gap-3 w-full">
+            <div className="flex items-center gap-3 w-full mt-6 mb-4  ">
               <div className="flex-1 h-px bg-gray-300"></div>
               <span className="text-sm text-gray-500 font-medium">
                 OU
               </span>
               <div className="flex-1 h-px bg-gray-300"></div>
-
             </div>
 
             {/* Sessão de botões pra login */}
             <div className="flex items-center gap-4">
-              <div className="w-8">
+              <div className="w-8 cursor-pointer">
                 <img src="https://i.pinimg.com/1200x/5b/b0/f7/5bb0f73a7b3e0f976acad614a42e5040.jpg" alt="" />
               </div>
-              <div className="w-10">
+              <div className="w-10 cursor-pointer">
                 <img src="https://i.pinimg.com/1200x/45/20/dd/4520ddfc56208707045c56232e946f7f.jpg" alt="" />
               </div>
-              <div className="w-10">
+              <div className="w-10 cursor-pointer">
                 <img src="https://i.pinimg.com/1200x/b2/f8/28/b2f828513f21444829a619ce563d4d4e.jpg" alt="" />
               </div>
+            </div>
+
+            {/* sessão para se cadrastar */}
+            <div className="flex items-center mt-3">
+              <span className="text-gray-800 text-sm">
+                Não tem uma conta ? 
+              </span>
+              <a className="pl-2 text-blue-800 text-sm"
+              href="">Cadastre-se</a>
             </div>
 
           </div>
