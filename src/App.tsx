@@ -7,7 +7,7 @@ export default function App() {
 
   return (
       <div className="bg-gray-100 text-black h-screen flex items-center justify-center">
-      <div className="bg-white w-4xl min-h-96 font-bold overflow-hidden flex">
+      <div className="bg-white w-4xl font-bold overflow-hidden flex">
         {/* Imagem da Esquerda do Layout */}
         <div className="w-1/2">
           <img
@@ -56,7 +56,7 @@ export default function App() {
                   <input
                     type="email"
                     placeholder="Digite seu email"
-                    className=" w-full h-12 rounded-lg pl-10 outline-none text-black placeholder:text-base border-2 border-gray-400/40 focus:border-blue-900/50 transition"
+                    className=" w-full h-12 rounded-lg pl-10 outline-none text-black/80 placeholder:text-base border-2 border-gray-400/40 focus:border-blue-900/50 transition"
                   />
                 </div>
 
@@ -69,7 +69,7 @@ export default function App() {
                   <input
                     type={showPassword ? "text" : "password"}
                     placeholder="*********"
-                    className=" w-full h-12 rounded-lg pl-10 outline-none text-black placeholder:text-base border-2 border-gray-400/40 focus:border-blue-900/50 transition"
+                    className=" w-full h-12 rounded-lg pl-10 outline-none text-black placeholder:text-sm border-2 border-gray-400/40 focus:border-blue-900/50 transition"
                   />
 
                     <button
@@ -89,6 +89,28 @@ export default function App() {
               </div>
                           
             </form> 
+             
+            <div className="flex items-center gap-3 w-full">
+              <div className="flex-1 h-px bg-gray-300"></div>
+              <span className="text-sm text-gray-500 font-medium">
+                OU
+              </span>
+              <div className="flex-1 h-px bg-gray-300"></div>
+
+            </div>
+
+            {/* Sessão de botões pra login */}
+            <div className="flex items-center gap-4">
+              <div className="w-8">
+                <img src="https://i.pinimg.com/1200x/5b/b0/f7/5bb0f73a7b3e0f976acad614a42e5040.jpg" alt="" />
+              </div>
+              <div className="w-10">
+                <img src="https://i.pinimg.com/1200x/45/20/dd/4520ddfc56208707045c56232e946f7f.jpg" alt="" />
+              </div>
+              <div className="w-10">
+                <img src="https://i.pinimg.com/1200x/b2/f8/28/b2f828513f21444829a619ce563d4d4e.jpg" alt="" />
+              </div>
+            </div>
 
           </div>
 
