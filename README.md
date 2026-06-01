@@ -19,9 +19,9 @@ O objetivo principal foi praticar conceitos de Front-End, como estruturação de
 
 ## Preview
 
-![Preview do Projeto](public/page-login-us.png)
+![Preview do Projeto](public/page-login-Us.png)
 
----
+
 
 ## Funcionalidades Implementadas
 
