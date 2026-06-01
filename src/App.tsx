@@ -6,30 +6,32 @@ export default function App() {
   const [showPassword, setShowPassword] = useState(false)
 
   return (
-      <div className="bg-gray-100 text-black h-screen flex items-center justify-center">
-      <div className="bg-white w-4xl h-137.5 font-bold overflow-hidden flex">
+     <div className="bg-gray-100 text-black min-h-screen flex items-center justify-center p-4">
+      <div
+        className="bg-white w-full max-w-4xl max-h-137.5 overflow-hidden flex flex-col md:flex-row md:w-4xl rounded-md shadow-lg"
+      >
         {/* Imagem da Esquerda do Layout */}
-        <div className="w-1/2">
+        <div className="hidden md:block w-1/2">
           <img
-            src="public/page-login.png"
+            src="/page-login.png"
             alt=""
             className="w-full h-full object-cover"
           />
         </div>
 
         {/* Fomrulario de Login do usuario  */}
-        <div className="w-1/2 flex items-center justify-center p-10">
+        <div className="w-full md:w-1/2 flex items-center justify-center px-6 py-10 sm:px-8 md:px-10">
           <div className="w-full max-w-sm flex flex-col items-center">            
             {/* Logo */}
             <img
               src="https://i.pinimg.com/1200x/79/a4/a6/79a4a63184f7efbc6c148ad552e60a75.jpg"
               alt="Logo"
-              className="w-16 h-16  object-cover"
+              className="w-16 h-16 rounded-full object-cover shadow-2xl"
             />
 
             {/* Texto */}
-            <h1 className="text-gray-900 font-bold m-6">
-              <span className="text-lg">
+            <h1 className="text-center text-gray-900 font-bold my-6">
+              <span className="text-lg sm:text-xl">
                 Seja Bem-Vindo!
               </span>
 
