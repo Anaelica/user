@@ -53,7 +53,7 @@ Durante o desenvolvimento deste projeto foram praticados conceitos como:
 
 
 ```md
-![Preview do Projeto](./public/page-login-Us.png)
+![Preview do Projeto](./public/page-login-us.png)
 ```
 
 ---
