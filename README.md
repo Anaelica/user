@@ -17,6 +17,12 @@ O objetivo principal foi praticar conceitos de Front-End, como estruturação de
 
 ---
 
+## Preview
+
+![Preview do Projeto](./public/page-login-us.png)
+
+---
+
 ## Funcionalidades Implementadas
 
 -  Layout moderno e responsivo
@@ -46,15 +52,6 @@ Durante o desenvolvimento deste projeto foram praticados conceitos como:
 - Organização de componentes visuais;
 - Manipulação básica do DOM;
 - Boas práticas de Front-End.
-
----
-
-## Preview
-
-
-```md
-![Preview do Projeto](./public/page-login-us.png)
-```
 
 ---
 
